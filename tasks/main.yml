@@ -1,0 +1,7 @@
+---
+- name: ensure postgresql users
+  block:
+    - import_tasks: ping.yml
+    - import_tasks: users.yml
+  tags:
+    - postgresql-users

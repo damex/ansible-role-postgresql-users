@@ -1,0 +1,12 @@
+---
+- name: ensure postgresql users
+  postgresql_user:
+    name: "{{ item.name | default(item) }}"
+    password: "{{ item.password | default(omit) }}"
+    no_password_changes: "{{ item.no_password_changes | default(postgresql_users_no_password_changes) }}"
+    encrypted: "{{ item.encrypted | default(postgresql_users_password_encryption) }}"
+    state: "{{ item.state | default(postgresql_users_state) }}"
+  no_log: true
+  become: true
+  become_user: "{{ postgresql_users_user }}"
+  loop: "{{ postgresql_users }}"

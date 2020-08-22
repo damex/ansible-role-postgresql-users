@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  role_name: postgresql-users
+  author: Roman Kuzmitskii
+  description: postgresql-users role
+  license: GPLv2
+  min_ansible_version: 2.9
+  galaxy_tags:
+    - database
+    - postgresql
+  platforms:
+    - name: "Debian"
+      versions:
+        - "buster"
+dependencies: []

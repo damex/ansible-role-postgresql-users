@@ -1,0 +1,5 @@
+---
+- name: ensure postgresql is available
+  postgresql_ping:
+  become: true
+  become_user: "{{ postgresql_users_user }}"

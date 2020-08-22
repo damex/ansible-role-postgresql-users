@@ -2,7 +2,7 @@
 
 [![linting](https://github.com/damex/ansible-role-postgresql-users/workflows/linting/badge.svg)](https://github.com/damex/ansible-role-postgresql-users/actions)
 
-The postgresql-users role is designed to be used with `Debian Buster` distributive.
+The postgresql-users role is designed to be used with `Debian Buster` and `Ubuntu Focal` distributives.
 
 `Ansible Galaxy` users can add postgresql-users role using the following command:
 
